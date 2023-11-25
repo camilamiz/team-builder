@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import "./App.css";
 import Commands from "./components/Commands";
-import NextPlayers from "./components/NextPlayers";
-import CurrentPlayers from "./components/CurrentPlayers";
+import Players from "./components/Players";
 import Header from "./components/Header";
 
 function App() {
@@ -53,31 +52,26 @@ function App() {
       <Header />
       <div className="bg-stone-800 text-pink-50 w-full h-screen flex justify-center">
         <div className="w-3/4">
-          <div className="flex w-full justify-center">
+          <div className="flex w-full justify-center align-baseline">
             <Commands
               players={players}
               setPlayers={setPlayers}
               playersPerMatch={onPlayersPerMatch}
             />
-            <div className="flex items-center gap-3">
-              <div className="flex justify-center">
-                <button
-                  className="bg-pink-50 p-2 w-full rounded-lg px-4 text-stone-800"
-                  onClick={() => handleNewMatch()}
-                >
-                  Nova partida
-                </button>
-              </div>
-              <div className="flex justify-center">
-                <button className="rounded-lg bg-pink-50 text-stone-800 px-4 h-10">
-                  Reset
-                </button>
-              </div>
+            <div className="flex justify-center items-center">
+              <button
+                className="bg-pink-50 rounded text-stone-800 h-10 font-bold px-2"
+                onClick={() => handleNewMatch()}
+              >
+                Nova partida
+              </button>
             </div>
           </div>
           <div className="flex w-full justify-center">
-            <NextPlayers nextPlayers={nextPlayers} />
-            <CurrentPlayers currentPlayers={currentPlayers} />
+            <Players
+              nextPlayers={nextPlayers}
+              currentPlayers={currentPlayers}
+            />
           </div>
         </div>
       </div>

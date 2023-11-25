@@ -26,7 +26,7 @@ export default function Commands({ players, setPlayers, playersPerMatch }) {
   };
 
   return (
-    <div className="block mb-4">
+    <div className="mb-4">
       <div className="mb-2 mt-4 flex justify-between gap-6">
         <div>
           <label>Novo jogador</label>
