@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/team-builder/static/css/main.22472914.css",
+    "main.js": "/team-builder/static/js/main.3312dba6.js",
+    "index.html": "/team-builder/index.html",
+    "main.22472914.css.map": "/team-builder/static/css/main.22472914.css.map",
+    "main.3312dba6.js.map": "/team-builder/static/js/main.3312dba6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22472914.css",
+    "static/js/main.3312dba6.js"
+  ]
+}
